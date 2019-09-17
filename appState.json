@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "hiru1709_test/lambda.js",
-        "code": "exports.handler = function (event, context, callback) {\n    console.log(event);\n    //let variable = 3;\n    console.log(variable);\n    callback(null, {\n        \"isBase64Encoded\": true,\n        \"statusCode\": 200,\n        \"headers\": {\n            \"headerName\": \"headerValue\"\n        },\n        \"body\": \"this is the body\"\n    });\n}",
+        "code": "exports.handler = function (event, context, callback) {\n    console.log(event);\n    let variable = 3;\n    console.log(variable);\n    callback(null, {\n        \"isBase64Encoded\": true,\n        \"statusCode\": 200,\n        \"headers\": {\n            \"headerName\": \"headerValue\"\n        },\n        \"body\": \"this is the body\"\n    });\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -132,7 +132,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1568695652602
+    "lastSave": 1568697040883
   },
   "VCS_STATE": {
     "provider": "GitHub",

@@ -1,6 +1,6 @@
 exports.handler = function (event, context, callback) {
     console.log(event);
-    //let variable = 3;
+    let variable = 3;
     console.log(variable);
     callback(null, {
         "isBase64Encoded": true,
