@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "hiru1709_test/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    console.log(event);\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function (event, context, callback) {\n    console.log(event);\n    //let variable = 3;\n    console.log(variable);\n    callback(null, {\n        \"isBase64Encoded\": true,\n        \"statusCode\": 200,\n        \"headers\": {\n            \"headerName\": \"headerValue\"\n        },\n        \"body\": \"this is the body\"\n    });\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -35,7 +35,16 @@
             "resourceName": "apigusEast1HiruTestindunilsub1post",
             "config": {}
           }
-        ]
+        ],
+        "testCases": {
+          "d6f54ba8-bb60-4201-80bf-9f60412ee8df": {
+            "id": "d6f54ba8-bb60-4201-80bf-9f60412ee8df",
+            "name": "Test event",
+            "functionId": "c3b5243e-eeaa-4738-9d8d-846417baf3e3",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
       }
     },
     "rootNode": "c5b4c327-a35f-4cba-b11c-7d55ac8c1676",
@@ -89,11 +98,11 @@
           "resourceName": "indunilsub1",
           "resourcePath": "/indunilsub1",
           "restMethod": "POST",
-          "proxyIntegration": false,
+          "proxyIntegration": true,
           "enableCORS": false,
           "stageMode": 1,
           "stageName": "Test",
-          "stageDeploymentId": "f9tcrs",
+          "stageDeploymentId": "0ilosm",
           "mode": 1
         }
       }
@@ -123,7 +132,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1568694809371
+    "lastSave": 1568695652602
   },
   "VCS_STATE": {
     "provider": "GitHub",

@@ -1,4 +1,13 @@
-exports.handler = function(event, context, callback) {
+exports.handler = function (event, context, callback) {
     console.log(event);
-    callback(null, {"message": "Successfully executed"});
+    //let variable = 3;
+    console.log(variable);
+    callback(null, {
+        "isBase64Encoded": true,
+        "statusCode": 200,
+        "headers": {
+            "headerName": "headerValue"
+        },
+        "body": "this is the body"
+    });
 }
