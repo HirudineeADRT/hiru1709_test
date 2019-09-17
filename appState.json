@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "hiru1709_test/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    console.log(event);\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -32,7 +32,7 @@
         },
         "triggers": [
           {
-            "resourceName": "apigusEast1HiruTestindunilsubget",
+            "resourceName": "apigusEast1HiruTestindunilsub1post",
             "config": {}
           }
         ]
@@ -70,6 +70,32 @@
           "stageDeploymentId": "nhrpfj",
           "mode": 1
         }
+      },
+      "apigusEast1HiruTestindunilsub1post": {
+        "name": "apigusEast1HiruTestindunilsub1post",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "HiruTest",
+          "apiId": "en8h7rqny1",
+          "endpointType": "EDGE",
+          "rootResourceId": "tq2sx73633",
+          "existingResources": {
+            "/indunilsub": "5oob67",
+            "/": "tq2sx73633"
+          },
+          "resourceMode": 0,
+          "resourceName": "indunilsub1",
+          "resourcePath": "/indunilsub1",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "f9tcrs",
+          "mode": 1
+        }
       }
     },
     "customTemplate": {
@@ -97,7 +123,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1568694158601
+    "lastSave": 1568694809371
   },
   "VCS_STATE": {
     "provider": "GitHub",
