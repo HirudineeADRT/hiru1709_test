@@ -1,0 +1,109 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "c5b4c327-a35f-4cba-b11c-7d55ac8c1676": {
+        "id": "c5b4c327-a35f-4cba-b11c-7d55ac8c1676",
+        "parent": null,
+        "name": "hiru1709_test",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "c3b5243e-eeaa-4738-9d8d-846417baf3e3"
+        ],
+        "isRemovable": false,
+        "filePath": "hiru1709_test"
+      },
+      "c3b5243e-eeaa-4738-9d8d-846417baf3e3": {
+        "id": "c3b5243e-eeaa-4738-9d8d-846417baf3e3",
+        "parent": "c5b4c327-a35f-4cba-b11c-7d55ac8c1676",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1709_test/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1HiruTestindunilsubget",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "rootNode": "c5b4c327-a35f-4cba-b11c-7d55ac8c1676",
+    "openFiles": [
+      "c3b5243e-eeaa-4738-9d8d-846417baf3e3"
+    ],
+    "currentFileId": "c3b5243e-eeaa-4738-9d8d-846417baf3e3",
+    "resources": {
+      "apigusEast1HiruTestindunilsubget": {
+        "name": "apigusEast1HiruTestindunilsubget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "HiruTest",
+          "apiId": "en8h7rqny1",
+          "endpointType": "EDGE",
+          "rootResourceId": "tq2sx73633",
+          "existingResources": {
+            "/indunilsub": "5oob67",
+            "/": "tq2sx73633"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/indunilsub",
+          "resourceName": "indunilsub",
+          "resourceId": "5oob67",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "nhrpfj",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru1709_test",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1568694158601
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru1709_test",
+      "url": "https://github.com/HirudineeADRT/hiru1709_test"
+    }
+  }
+}
